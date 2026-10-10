@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: civicfix-ai
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    envVars:
+      - key: BREVO_API_KEY
+        sync: false
+      - key: SENDER_EMAIL
+        sync: false
+      - key: SENDER_NAME
+        value: CivicFix AI
+      - key: EMAIL_POTHOLE
+        sync: false
+      - key: EMAIL_GARBAGE
+        sync: false
+      - key: EMAIL_STREETLIGHT
+        sync: false
+      - key: EMAIL_OTHER
+        sync: false

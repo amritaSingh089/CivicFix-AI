@@ -1,0 +1,8 @@
+BREVO_API_KEY=xkeysib-***********************
+SENDER_EMAIL=gmail
+SENDER_NAME=CivicFix AI
+
+EMAIL_POTHOLE=gmail
+EMAIL_GARBAGE=gmail
+EMAIL_STREETLIGHT=gmail
+EMAIL_OTHER=gmail
